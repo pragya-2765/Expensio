@@ -52,7 +52,7 @@ streamlit run app.py
 
 ---
 
-## 🗄️ Database Notes
+**##**🗄️ Database Notes
 
 •SQLite database (expenses.db) is created automatically on startup
 •Database file is not committed to GitHub
@@ -60,7 +60,7 @@ streamlit run app.py
 
 ---
 
-##🔐 Security & Best Practices
+**##**🔐 Security & Best Practices
 
 •No API keys or secrets in the repository
 •Database files are excluded using .gitignore
