@@ -50,13 +50,17 @@ uvicorn main:app --reload
 3️⃣ Start the Streamlit frontend
 streamlit run app.py
 
-🗄️ Database Notes
+---
+
+## 🗄️ Database Notes
 
 •SQLite database (expenses.db) is created automatically on startup
 •Database file is not committed to GitHub
 •Dummy/sample data can be added through the UI
 
-🔐 Security & Best Practices
+---
+
+##🔐 Security & Best Practices
 
 •No API keys or secrets in the repository
 •Database files are excluded using .gitignore
