@@ -1,2 +1,69 @@
-# Expensio
-Expensio is a FastAPI + Streamlit expense tracking app with CRUD operations, monthly expense summaries, and visual analytics. Built using SQLite with automatic database creation and a clean, portfolio-ready project structure.
+# 💸 Expensio
+
+**Expensio** is a simple and clean **expense tracking web application** built using  
+**FastAPI** (backend) and **Streamlit** (frontend).
+
+It allows users to manage daily expenses and view monthly spending summaries with visual insights.
+
+---
+
+## 🚀 Features
+
+- ➕ Add new expenses
+- ✏️ Update existing expenses
+- ❌ Delete expenses
+- 📋 View all expenses in a table
+- 📊 Monthly expense summary with chart
+- 🗄️ SQLite database (auto-created)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** FastAPI
+- **Frontend:** Streamlit
+- **Database:** SQLite
+- **Language:** Python
+
+---
+
+## 📁 Project Structure
+expensio/
+│
+├── app.py # Streamlit frontend
+├── main.py # FastAPI backend
+├── database.py # Database connection & table creation
+├── requirements.txt # Project dependencies
+└── README.md # Project documentation
+
+---
+
+## ▶️ How to Run Expensio
+
+### 1️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+
+2️⃣ Start the FastAPI backend
+uvicorn main:app --reload
+
+3️⃣ Start the Streamlit frontend
+streamlit run app.py
+
+🗄️ Database Notes
+
+•SQLite database (expenses.db) is created automatically on startup
+•Database file is not committed to GitHub
+•Dummy/sample data can be added through the UI
+
+🔐 Security & Best Practices
+
+•No API keys or secrets in the repository
+•Database files are excluded using .gitignore
+•Parameterized SQL queries prevent SQL injection
+
+📌 Future Improvements
+
+•User authentication
+•Expense category analytics
+•Cloud deployment (Render /
