@@ -94,7 +94,7 @@ if st.button("✅ Add Expense", use_container_width=True):
     else:
         st.error("Failed to add expense ❌. Please try again.")
 st.divider()
-st.subheader("Delete an Expense")
+st.subheader("🗑️ Delete an Expense")
 delete_id= st.number_input("Expense ID to delete", min_value=1, step=1)
 
 if st.button("Delete Expense"):
@@ -161,4 +161,5 @@ if response.status_code==200:
 else:
 
     st.error("Failed to fetch monthly summary from the backend.")
+
 
