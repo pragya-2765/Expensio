@@ -41,7 +41,6 @@ expensio/
 ## ▶️ How to Run Expensio
 
 ### 1️⃣ Install dependencies
-```bash
 pip install -r requirements.txt
 
 2️⃣ Start the FastAPI backend
