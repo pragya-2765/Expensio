@@ -3,7 +3,8 @@ import requests
 from datetime import date
 import pandas as pd
 
-BACKEND_URL= "http://127.0.0.1:8000"
+BACKEND_URL = st.secrets.get("BACKEND_URL", "http://127.0.0.1:8000")
+
 st.set_page_config(
     page_title="Expense Tracker",
     page_icon="💸",
@@ -157,4 +158,5 @@ if response.status_code==200:
     else:
         st.info("No data available.")
 else:
+
     st.error("Failed to fetch monthly summary from the backend.")
