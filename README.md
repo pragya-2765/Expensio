@@ -40,33 +40,34 @@ expensio/
 
 ## ▶️ How to Run Expensio
 
-### 1️⃣ Install dependencies
+### Install dependencies
+```
 pip install -r requirements.txt
+```
 
-2️⃣ Start the FastAPI backend
+### Start the FastAPI backend
+```
 uvicorn main:app --reload
+```
 
-3️⃣ Start the Streamlit frontend
+### Start the Streamlit frontend
+```
 streamlit run app.py
+```
 
----
+## 🗄️ Database Notes
+- SQLite database (expenses.db) is created automatically on startup
+- Database file is not committed to GitHub
+- Dummy or sample data can be added through the UI
 
-🗄️ Database Notes
 
-•SQLite database (expenses.db) is created automatically on startup
-•Database file is not committed to GitHub
-•Dummy/sample data can be added through the UI
+## 🔐 Security & Best Practices
+- No API keys or secrets are stored in the repository
+- Database files are excluded using .gitignore
+- Parameterized SQL queries are used to prevent SQL injection
 
----
+## 📌 Future Improvements
+- User authentication
+- Expense category analytics
+- Cloud deployment
 
-🔐 Security & Best Practices
-
-•No API keys or secrets in the repository
-•Database files are excluded using .gitignore
-•Parameterized SQL queries prevent SQL injection
-
-📌 Future Improvements
-
-•User authentication
-•Expense category analytics
-•Cloud deployment (Render /
