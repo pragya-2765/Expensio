@@ -143,6 +143,7 @@ else:
 
 st.divider()
 st.subheader("🗓️ Monthly Expense Summary")
+df_summary= pd.DataFrame()
 response= requests.get(f"{BACKEND_URL}/monthly-summary")
 if response.status_code==200:
     summary= response.json()
@@ -160,3 +161,4 @@ if response.status_code==200:
 else:
 
     st.error("Failed to fetch monthly summary from the backend.")
+
